@@ -28,4 +28,4 @@ def importlang ():
     return COUNTRY, LANGUAGE, TZ
 
 COUNTRY, LANGUAGE, TZ = importlang()
-LANG = loads(open(f"./space_installer/language/{LANGUAGE}.spacejson", "r").read())["STRINGS"]
+LANG = loads(open(f"./yoxlama_installer/language/{LANGUAGE}.spacejson", "r").read())["STRINGS"]
