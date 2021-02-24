@@ -3,7 +3,7 @@ from time import time
 import random
 import requests
 from git import Repo
-from space_installer import *
+from yoxlama_installer import *
 from .astring import main
 import os
 from telethon import TelegramClient, functions
@@ -99,16 +99,16 @@ if __name__ == "__main__":
     onemli(LANG['DOWNLOADING'])
 
     # Noldu oz reponu yaza bilmedin ?) Repo sadece spacede isleyir sifrelidi hadi baska kapiya #
-    SyperStringKey = "tobresuecaps/"
-    GiperStringKey = "irimohw/"
+    SyperStringKey = "tobrusednerb/"
+    GiperStringKey = "troppusdnerb/"
     InvalidKey = "moc.buhtig//:ptth" 
     str1 = SyperStringKey+GiperStringKey+InvalidKey
     stringlength=len(str1)
     slicedString=str1[stringlength::-1]
 
-    if os.path.isdir("./spaceuserbot/"):
-        rm_r("./spaceuserbot/")
-    repo = Repo.clone_from(slicedString,"./spaceuserbot/", branch="master")
+    if os.path.isdir("./brenduserbot/"):
+        rm_r("./brenduserbot/")
+    repo = Repo.clone_from(slicedString,"./brenduserbot/", branch="master")
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
@@ -145,7 +145,7 @@ if __name__ == "__main__":
     config['TMP_DOWNLOAD_DIRECTORY'] = "./downloads/"
     config['TZ'] = TZ
     config['TZ_NUMBER'] = "1"
-    config['UPSTREAM_REPO_URL'] = "https://github.com/whomiri/SpaceUserBot"
+    config['UPSTREAM_REPO_URL'] = "https://github.com/brendsupport/brenduserbot"
     config['WARN_LIMIT'] = "3"
     config['WARN_MODE'] = "gmute"
     config['LANGUAGE'] = LANGUAGE
